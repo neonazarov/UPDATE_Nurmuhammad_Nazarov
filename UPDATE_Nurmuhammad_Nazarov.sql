@@ -1,13 +1,13 @@
 UPDATE film
 SET rental_duration = 21, rental_rate = 9.99
-WHERE title = 'Forsage';
+WHERE title = 'Inception';
 
 
 UPDATE customer
 SET
-    first_name = 'jafar',
-    last_name = 'djurayev',
-    email = 'jafardjurayev@example.com',
+    first_name = 'Nurmuhammad',
+    last_name = 'Nazarov',
+    email = 'neonazarov@example.com',
     address_id = (SELECT address_id FROM address WHERE address = 'MYExistingAddress'), 
     create_date = current_date
 WHERE customer_id IN (
